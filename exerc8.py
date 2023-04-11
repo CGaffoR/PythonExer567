@@ -1,10 +1,16 @@
-def ler_temperatura():
+def ler():
     temperatura = float(input("Digite a temperatura em graus Celsius: "))
     return temperatura
 
 def converter(temperatura):
-    temperatura_fahrenheit = (9 * temperatura + 160) / 5
+    temperaturaConvertida = (9 * temperatura + 160) / 5
     return temperaturaConvertida
 
-def mostrar(temperatura_fahrenheit):
-    print(f"A temperatura em graus Fahrenheit é: {temperatura_fahrenheit:.2f}")
+def mostrar(temperatura):
+    print(f"A temperatura em graus Fahrenheit é: {temperatura:.2f}")
+
+temp = ler();
+
+temp = converter(temp);
+
+mostrar(temp)
